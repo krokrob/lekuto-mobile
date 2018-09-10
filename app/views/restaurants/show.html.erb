@@ -1,0 +1,21 @@
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+  <div class="banner-content">
+    <h1><%= @restaurant.name %></h1>
+  </div>
+</div>
+<div class="d-flex justify-content-center align-items-center">
+  <ul class="list-unstyled pt-1 pb-1">
+    <li>
+      <i class="fa fa-map-marker"></i> <%= @restaurant.address %>
+    </li>
+    <li class="pt-1">
+      <% 5.times do |i| %>
+        <% if i < @restaurant.rating %>
+          <i class="fa fa-star text-yellow"></i>
+        <% else %>
+          <i class="fa fa-star text-secondary"></i>
+        <% end %>
+      <% end %>
+    </li>
+  </ul>
+</div>
