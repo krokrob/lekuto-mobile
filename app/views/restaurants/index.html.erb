@@ -1,11 +1,6 @@
 <div class="container pt-1">
   <p id="notice"><%= notice %></p>
   <div class="row">
-    <div class="col-xs-12">
-      <h1 class="text-center">
-        Lekuto Paris
-      </h1>
-    </div>
     <% @restaurants.each do |restaurant| %>
       <% image_url = "https://kitt.lewagon.com/placeholder/cities/#{@cities.sample}" %>
       <% avatar_url = "https://kitt.lewagon.com/placeholder/users/#{@users.sample}" %>
