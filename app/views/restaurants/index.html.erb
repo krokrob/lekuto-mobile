@@ -2,8 +2,8 @@
   <p id="notice"><%= notice %></p>
   <div class="row">
     <% @restaurants.each do |restaurant| %>
-      <% image_url = "https://kitt.lewagon.com/placeholder/cities/#{@cities.sample}" %>
-      <% avatar_url = "https://kitt.lewagon.com/placeholder/users/#{@users.sample}" %>
+      <% image_url = "https://kitt.lewagon.com/placeholder/cities/#{restaurant.city}" %>
+      <% avatar_url = "https://kitt.lewagon.com/placeholder/users/#{restaurant.user}" %>
       <div class="col-xs-12">
         <div class="card mb-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_url %>');">
           <div class="card-category">Popular</div>
